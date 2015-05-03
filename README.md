@@ -11,7 +11,7 @@ test ldap
     l.set_option(ldap.OPT_X_TLS,ldap.OPT_X_TLS_DEMAND)
     l.set_option( ldap.OPT_X_TLS_DEMAND, True )
     l.set_option( ldap.OPT_DEBUG_LEVEL, 255 )
-    baseDN = "o=msb"
+    baseDN = "o=USERS,dc=openedx,dc=com"
     searchScope = ldap.SCOPE_SUBTREE
     retrieveAttributes = None
     searchFilter = "cn=*zyu*"
