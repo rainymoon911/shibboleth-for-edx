@@ -1,3 +1,16 @@
+
+apache and tomcat:
+
+    apt-get install apache2
+    a2enmod ssl
+    a2enmod proxy_ajp
+
+    sudo apt-get install tomcat6
+    
+change the /etc/default/tomcat6,Add the following parameters to the JAVA_OPTS environment variable
+
+    -Xmx512m
+    
     
 jdk(oracle jdk):
 
