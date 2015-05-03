@@ -6,6 +6,11 @@ jdk(oracle jdk):
     sudo apt-get update
     sudo apt-get install oracle-java7-installer
     
+configure jdk
+
+    update-alternatives --config java
+    
+    
 idp:
     
     wget http://shibboleth.net/downloads/identity-provider/2.4.4/shibboleth-identityprovider-2.4.4-bin.zip
