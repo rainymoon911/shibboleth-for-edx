@@ -17,3 +17,4 @@ idp:
     unzip shibboleth-identityprovider-2.4.4-bin.zip
     cd shibboleth-identityprovider-2.4.4
     JAVA_HOME=/usr/lib/jvm/java-7-oracle ./install.sh
+    chown -R tomcat6:tomcat6 /opt/shibboleth-idp
