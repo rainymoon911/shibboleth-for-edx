@@ -14,7 +14,7 @@ test ldap
     baseDN = "ou=Users,dc=openedx,dc=com"
     searchScope = ldap.SCOPE_SUBTREE
     retrieveAttributes = None
-    searchFilter = "cn=*zyu*"
+    searchFilter = "cn=*z*"
     ldap_result_id = l.search(baseDN, searchScope, searchFilter)
     result_set = []
     while 1:
