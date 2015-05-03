@@ -7,7 +7,7 @@ apache and tomcat:
 
     sudo apt-get install tomcat6
     
-[*https://wiki.shibboleth.net/confluence/display/SHIB2/IdPApacheTomcatPrepare configuration of apache and tomcat]
+[configuration of apache and tomcat](https://wiki.shibboleth.net/confluence/display/SHIB2/IdPApacheTomcatPrepare) 
     
     
     
