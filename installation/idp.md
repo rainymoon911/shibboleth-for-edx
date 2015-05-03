@@ -7,9 +7,8 @@ apache and tomcat:
 
     sudo apt-get install tomcat6
     
-change the /etc/default/tomcat6,Add the following parameters to the JAVA_OPTS environment variable
-
-    -Xmx512m
+[*https://wiki.shibboleth.net/confluence/display/SHIB2/IdPApacheTomcatPrepare configuration of apache and tomcat]
+    
     
     
 jdk(oracle jdk):
