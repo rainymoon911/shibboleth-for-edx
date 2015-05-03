@@ -5,7 +5,7 @@ test ldap
 
     import ldap
     ldap.set_option(ldap.OPT_X_TLS_REQUIRE_CERT, ldap.OPT_X_TLS_NEVER)
-    l = ldap.initialize("ldaps://192.168.0.11:636")
+    l = ldap.initialize("ldaps://192.168.1.116:636")
     l.set_option(ldap.OPT_REFERRALS, 0)
     l.set_option(ldap.OPT_PROTOCOL_VERSION, 3)
     l.set_option(ldap.OPT_X_TLS,ldap.OPT_X_TLS_DEMAND)
@@ -14,7 +14,7 @@ test ldap
     baseDN = "o=msb"
     searchScope = ldap.SCOPE_SUBTREE
     retrieveAttributes = None
-    searchFilter = "cn=*fitzsimmons*"
+    searchFilter = "cn=*zyu*"
     ldap_result_id = l.search(baseDN, searchScope, searchFilter)
     result_set = []
     while 1:
