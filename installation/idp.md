@@ -24,6 +24,8 @@ configure jdk
     
     
 idp:
+
+    [download source](http://shibboleth.net/downloads/identity-provider/)
     
     wget http://shibboleth.net/downloads/identity-provider/2.4.4/shibboleth-identityprovider-2.4.4-bin.zip
     unzip shibboleth-identityprovider-2.4.4-bin.zip
