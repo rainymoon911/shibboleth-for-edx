@@ -11,7 +11,7 @@ apache and tomcat:
     
     
     
-jdk(oracle jdk):
+jdk(oracle jdk--officially recommended):
 
     sudo apt-get install python-software-properties
     sudo add-apt-repository ppa:webupd8team/java
