@@ -25,9 +25,9 @@ configure jdk
     
 idp:
 
-    [download source](http://shibboleth.net/downloads/identity-provider/)
+[download source](http://shibboleth.net/downloads/identity-provider/)
     
-    wget http://shibboleth.net/downloads/identity-provider/2.4.4/shibboleth-identityprovider-2.4.4-bin.zip
+    download the source
     unzip shibboleth-identityprovider-2.4.4-bin.zip
     cd shibboleth-identityprovider-2.4.4
     JAVA_HOME=/usr/lib/jvm/java-7-oracle ./install.sh
