@@ -1,4 +1,6 @@
 [openldap on turkey](http://www.turnkeylinux.org/openldap)
 ======
 
-the image has installed phpldapadmin,use this tool to manage openldap
+1. the image has installed phpldapadmin,use this tool to manage openldap
+2. test.py can help you test whether the openldap work corectly(modify the ip and filter)
+
