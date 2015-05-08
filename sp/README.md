@@ -1,2 +1,2 @@
-configuration of sp(jsut for test ,finally installed on edx)
+configuration of sp(just for test ,finally installed on edx)
 ======
