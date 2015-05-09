@@ -1,3 +1,5 @@
 *.pem
 *.logger
 *.html
+*.xsl
+*.swo
