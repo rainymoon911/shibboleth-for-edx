@@ -31,6 +31,8 @@ configure jdk
     
 3.idp:
 
+our system is internal,so i don't use tsl/ssl(change https to http in configuration file)
+
 3.1 install idp
 
 [download source](http://shibboleth.net/downloads/identity-provider/)
@@ -40,7 +42,13 @@ configure jdk
     cd shibboleth-identityprovider-2.4.4
     JAVA_HOME=/usr/lib/jvm/java-7-oracle ./install.sh
     chown -R tomcat6:tomcat6 /opt/shibboleth-idp
-    
+
+test idp by access localhost:8080//idp/profile/Status
+
+the default port for idp is 8080,if you don't change the port,you may need to change all the idp.edx.org to idp.edx.org:8080
+
+the files you need to change are relying-party.xml,idp-metadata.xml(and the configuration of sp )
+
 3.2 configure metadata from sp(about how to generate sp-metadata,refer to the configuration of sp)
 
 (the name of sp-metadata on idp server must be the same of the metadata on sp server)
@@ -52,6 +60,19 @@ configure jdk
     <metadata:MetadataProvider xsi:type="FilesystemMetadataProvider"
 		xmlns="urn:mace:shibboleth:2.0:metadata" id="SPMETADATA"
 		metadataFile="/opt/shibboleth-idp/metadata/sp-metadata.xml" />
+		
+3.3 configure ldap for authentication
+
+firetly use the /ldap/test_ldap.py to ensure the ldap work corectly
+
+	vi handler.xml
+	//add the following code
+	<!--  Username/password login handler -->
+	<ph:LoginHandler xsi:type="ph:UsernamePassword"
+		jaasConfigurationLocation="file:///opt/shibboleth-idp/conf/login.config">
+	<ph:AuthenticationMethod>urn:oasis:names:tc:SAML:2.0:ac:classes:
+		PasswordProtectedTransport</ph:AuthenticationMethod>
+	</ph:LoginHandler></code>
 		
 
 
