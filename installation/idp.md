@@ -74,5 +74,29 @@ firetly use the /ldap/test_ldap.py to ensure the ldap work corectly
 		PasswordProtectedTransport</ph:AuthenticationMethod>
 	</ph:LoginHandler></code>
 		
+	vi attribute-resolver.xml
+	//add the following code
+	<resolver:DataConnector id="myLDAP" xsi:type="dc:LDAPDirectory"
+        ldapURL="ldap://your ldap url" 
+        baseDN="ou=Users,dc=openedx,dc=com" 
+        principal="cn=admin,dc=openedx,dc=com"
+        principalCredential="password">
+        <dc:FilterTemplate>
+            <![CDATA[
+                (uid=$requestContext.principalName)
+            ]]>
+        </dc:FilterTemplate>
+    	</resolver:DataConnector>
+    	
+    	vi attrbute-filter.xml
+    	//add the following code
+    	<afp:AttributeRule attributeID="email">
+	    <afp:PermitValueRule xsi:type="basic:ANY" />
+    	</afp:AttributeRule>
 
+	<afp:AttributeRule attributeID="commonName">
+	    <afp:PermitValueRule xsi:type="basic:ANY" />
+	    
+change the attribute you want to release and the policy of that,but the attribute must correspond to 
+the attrbute-map.xml on sp server
 
