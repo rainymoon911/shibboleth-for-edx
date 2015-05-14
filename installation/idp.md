@@ -43,7 +43,7 @@ our system is internal,so i don't use tsl/ssl(change https to http in configurat
     JAVA_HOME=/usr/lib/jvm/java-7-oracle ./install.sh
     chown -R tomcat6:tomcat6 /opt/shibboleth-idp
 
-test idp by accessing localhost:8080//idp/profile/Status
+test idp by accessing idp.edx.org:8080//idp/profile/Status
 
 the default port for idp is 8080,if you don't change the port,you may need to change all the idp.edx.org to idp.edx.org:8080
 
