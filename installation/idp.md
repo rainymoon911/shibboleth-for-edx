@@ -1,5 +1,5 @@
 
-apache and tomcat:
+1.apache and tomcat:
 
     apt-get install apache2
     a2enmod ssl
@@ -9,9 +9,15 @@ apache and tomcat:
     
 [configuration of apache and tomcat](https://wiki.shibboleth.net/confluence/display/SHIB2/IdPApacheTomcatPrepare) 
     
+    vi /etc/hosts
+    //add the following code
+    127.0.0.1 idp.edx.org sp
     
+    vi /tomcat6/apache2.conf
+    //add the following code
+    ServerName idp.edx.org
     
-jdk(oracle jdk--officially recommended):
+2.jdk(oracle jdk--officially recommended):
 
     sudo apt-get install python-software-properties
     sudo add-apt-repository ppa:webupd8team/java
@@ -23,7 +29,7 @@ configure jdk
     update-alternatives --config java
     
     
-idp:
+3.idp:
 
 [download source](http://shibboleth.net/downloads/identity-provider/)
     
@@ -32,3 +38,5 @@ idp:
     cd shibboleth-identityprovider-2.4.4
     JAVA_HOME=/usr/lib/jvm/java-7-oracle ./install.sh
     chown -R tomcat6:tomcat6 /opt/shibboleth-idp
+    
+
