@@ -9,7 +9,9 @@ if you have configure ldap on idp correctly,the following command should return 
 
     ./aacli.sh --configDir=/opt/shibboleth-idp/conf/ --principal=zyu
     
-3.log file
+3.if you just have a idp or sp,use [testshib](http://www.testshib.org/) to test
+
+4.log file
 
 sp:/var/log/shibd.log
 
