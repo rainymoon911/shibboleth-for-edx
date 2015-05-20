@@ -1,7 +1,7 @@
 shibboleth for edx
 ======
 
-hasn't completed!
+provide SSO service for openedx,gitlab,online docker and other platforms used in OS courses on openedx
 
 introduction
 =======
