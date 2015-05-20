@@ -5,7 +5,6 @@
 2. test_ldap.py can help you test whether the openldap work corectly(modify the ip ,base DN and filter)
 3. if there is no eduPerson scheme on your ldap,eduPerson.ldif can help you,
    Put this file to /etc/ldap/schema/ and then execute the following comand to add this schema:
-    
-         
-      ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/ldap/schema/eduperson.ldif
+
+         ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/ldap/schema/eduperson.ldif
 
