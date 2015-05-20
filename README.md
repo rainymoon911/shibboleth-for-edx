@@ -1,10 +1,12 @@
 shibboleth for edx
 ======
 
-provide SSO service for openedx,gitlab,online docker and other platforms used in OS courses on openedx
-
 introduction
 =======
+provide SSO service and access control for openedx,gitlab,online docker and other platforms used in OS courses on openedx
+
+configure the idp  for Username/Password Authentication with ldap
+and then install sp on openedx ,gitlab ,online docker platforms
 
 version
 =======
