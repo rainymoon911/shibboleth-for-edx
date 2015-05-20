@@ -7,7 +7,7 @@ first, read [official document ](https://github.com/edx/configuration/wiki/Setti
 
 the dir of role is /edx/etc/playbooks/role
 
-just fill the main.yml and run the following command(refer to configuration of sp)
+just fill the main.yml(very important!, this will determine the initial configuration files) and run the following command(refer to configuration of sp)
 
     ansible-playbook ./run_role.yml -i "localhost," -c local -e role=shibboleth
     
