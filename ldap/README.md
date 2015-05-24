@@ -7,4 +7,8 @@
    Put this file to /etc/ldap/schema/ and then execute the following comand to add this schema:
 
          ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/ldap/schema/eduperson.ldif
+         
+4. use createUser.ldif to create user.
+
+         ldapadd -x -D “cn=Manager,dc=openedx,dc=com” -W -f createUser.ldif
 
