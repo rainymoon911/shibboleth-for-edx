@@ -10,5 +10,5 @@
          
 4. use createUser.ldif to create user.
 
-         ldapadd -x -D “cn=Manager,dc=openedx,dc=com” -W -f createUser.ldif
+         ldapadd -x -D “cn=admin,dc=openedx,dc=com” -W -f createUser.ldif
 
