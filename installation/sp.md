@@ -6,6 +6,7 @@ installation and configuration of sp
 there is a shib mod on apache,just install the mod
 
     sudo apt-get install libapache2-mod-shib2
+    a2enmod shib2
     
     vi /etc/hosts
     //add the following code
