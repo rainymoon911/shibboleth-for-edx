@@ -16,7 +16,7 @@ if there are some errors abour undefined var in apache/templates/lms (i treat it
 
 2.enable shib for edx-platform
 
-    vi /edxapp/lms/envs/common.py
+    vi /edx/app/edxapp/edx-platform/lms/envs/common.py
     set 'AUTH_USE_SHIB','SHIB_DISABLE_TOS','RESTRICT_ENROLL_BY_REG_METHOD' true
     
 3.set Advanced Option 'External Login Domain' to "shib:your idp url" in cms
