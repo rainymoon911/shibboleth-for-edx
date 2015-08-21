@@ -62,7 +62,7 @@ the default port for idp is 8080,if you don't change the port,you may need to ch
 		
 3.3 configure ldap for authentication
 
-firetly use the /ldap/test_ldap.py to ensure the ldap work corectly
+firstly use the /ldap/test_ldap.py to ensure the ldap work corectly
 
 	vi handler.xml
 	//add the following code
