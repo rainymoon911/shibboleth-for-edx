@@ -47,7 +47,6 @@ test idp by accessing idp.edx.org:8080//idp/profile/Status
 
 the default port for idp is 8080,if you don't change the port,you may need to change all the idp.edx.org to idp.edx.org:8080
 
-the files you need to change are relying-party.xml,idp-metadata.xml(and the configuration of sp )
 
 3.2 configure metadata from sp(about how to generate sp-metadata,refer to the configuration of sp)
 
