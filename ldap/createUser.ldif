@@ -1,15 +1,10 @@
 dn: uid=user_name,ou=Users,dc=openedx,dc=com
 objectClass: inetOrgPerson
-objectClass: posixAccount
 objectClass: top
 objectClass: eduPerson
 uid: user_name
 sn: user_name
 givenName: user_name
 cn: user_name
-uidNumber: 1003
-gidNumber: 500
-userPassword: passwd
-loginShell: /bin/bash
-homeDirectory: /home/users/user_name
+userPassword: password
 eduPersonPrincipalName:email
